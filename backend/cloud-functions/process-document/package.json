@@ -1,0 +1,21 @@
+{
+  "name": "process-document",
+  "version": "1.0.0",
+  "description": "Cloud Function to process uploaded documents via Document AI",
+  "main": "index.js",
+  "engines": {
+    "node": "20"
+  },
+  "scripts": {
+    "deploy": "gcloud functions deploy processDocument --gen2 --runtime nodejs20 --trigger-topic document-upload --entry-point processDocument --region asia-south1 --set-env-vars GCP_PROJECT_ID=indialawai-prod,STORAGE_BUCKET=indialawai-prod-documents,DOCUMENT_AI_LAYOUT_PROCESSOR=projects/indialawai-prod/locations/asia-south1/processors/7589e7eaf9f9db3d --project indialawai-prod"
+  },
+  "dependencies": {
+    "@google-cloud/functions-framework": "^3.3.0",
+    "@google-cloud/documentai": "^1.0.0",
+    "@google-cloud/firestore": "^7.1.0",
+    "@google-cloud/storage": "^7.7.0",
+    "@google-cloud/pubsub": "^4.0.1",
+    "firebase-admin": "^12.0.0"
+  }
+}
+
