@@ -3,7 +3,7 @@ import { GoogleGenerativeAI, GenerationConfig } from "@google/generative-ai";
 import { Analysis, ChatMessage, Document } from '../types';
 
 // IMPORTANT: In a real production app, use a backend proxy to protect this API key.
-const API_KEY = "AIzaSyAD0OFgY0LjliKELZZKNDdJKUZEmAGLxpE"; 
+const API_KEY = "YOUR_GEMINI_API_KEY"; 
 
 // Fix: Correctly compare against the actual placeholder key.
 export const isApiKeySet = API_KEY.length > 0 && !API_KEY.includes("YOUR_GEMINI_API_KEY");
