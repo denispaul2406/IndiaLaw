@@ -3,13 +3,13 @@ import { getAuth, GoogleAuthProvider, signInWithPopup, signOut, onAuthStateChang
 import { getFirestore } from 'firebase/firestore';
 
 const firebaseConfig = {
-  apiKey: import.meta.env.VITE_FIREBASE_API_KEY || "AIzaSyD3IouxktRf7pMWjsqdymENK6XxuNCJy8U",
-  authDomain: import.meta.env.VITE_FIREBASE_AUTH_DOMAIN || "indialawai-prod.firebaseapp.com",
-  projectId: import.meta.env.VITE_FIREBASE_PROJECT_ID || "indialawai-prod",
-  storageBucket: import.meta.env.VITE_FIREBASE_STORAGE_BUCKET || "indialawai-prod.firebasestorage.app",
-  messagingSenderId: import.meta.env.VITE_FIREBASE_MESSAGING_SENDER_ID || "252190730351",
-  appId: import.meta.env.VITE_FIREBASE_APP_ID || "1:252190730351:web:50472a40d84b63e65b059a",
-  measurementId: import.meta.env.VITE_FIREBASE_MEASUREMENT_ID || "G-JG0D8W85E5"
+  apiKey: import.meta.env.VITE_FIREBASE_API_KEY || ",
+  authDomain: import.meta.env.VITE_FIREBASE_AUTH_DOMAIN || "",
+  projectId: import.meta.env.VITE_FIREBASE_PROJECT_ID || "",
+  storageBucket: import.meta.env.VITE_FIREBASE_STORAGE_BUCKET || "",
+  messagingSenderId: import.meta.env.VITE_FIREBASE_MESSAGING_SENDER_ID || "",
+  appId: import.meta.env.VITE_FIREBASE_APP_ID || "a",
+  measurementId: import.meta.env.VITE_FIREBASE_MEASUREMENT_ID || ""
 };
 
 // Initialize Firebase
